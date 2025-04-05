@@ -7,7 +7,7 @@ const projects = [
     description:
       "Log analyzer that turns raw system logs into real-time insights. Built for DevOps teams.",
     tag: "AI",
-    image: "./public/logflow.png",
+    image: import.meta.env.BASE_URL + "logflow.png",
     link: "#",
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     description:
       "A mood + productivity tracker built for consultants — charts, journaling, and sleep log.",
     tag: "Wellness",
-    image: "/logflow.png",
+    image: import.meta.env.BASE_URL + "logflow.png",
     link: "#",
   },
   {
@@ -43,7 +43,7 @@ const projects = [
     description:
       "Curate and test AI prompts across different models — export your best flows as templates.",
     tag: "AI Tools",
-    image: "/4.png",
+    image: import.meta.env.BASE_URL + "4.png",
     link: "#",
   },
   {
@@ -52,7 +52,7 @@ const projects = [
     description:
       "An organized Notion-like directory of 300+ resources for early-stage founders.",
     tag: "Productivity",
-    image: "/logflow.png",
+    image: import.meta.env.BASE_URL + "logflow.png",
     link: "#",
   },
 ];
