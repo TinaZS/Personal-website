@@ -7,7 +7,7 @@ const projects = [
     description:
       "Log analyzer that turns raw system logs into real-time insights. Built for DevOps teams.",
     tag: "AI",
-    image: "/logflow.png",
+    image: "./public/logflow.png",
     link: "#",
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     description:
       "A platform to unify and display campus events from multiple sources, updated in real time.",
     tag: "Campus",
-    image: "/amherst.png",
+    image: import.meta.env.BASE_URL + "amherst.png",
     link: "#",
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     description:
       "Match developers by interest and availability using GPT-powered tagging.",
     tag: "Hackathon",
-    image: "/3.png",
+    image: "/Personal-website/3.png",
     link: "#",
   },
   {
