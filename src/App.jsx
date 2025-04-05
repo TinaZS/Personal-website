@@ -5,7 +5,7 @@ import Projects from "./components/Projects";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/Personal-website">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
