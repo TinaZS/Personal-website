@@ -39,7 +39,6 @@ export default function Home() {
       variants={container}
     >
       {/* Optional soft noise for aesthetic */}
-      <div className="pointer-events-none absolute inset-0 opacity-[0.06] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
 
       {/* Heading */}
       <motion.h1
@@ -60,8 +59,8 @@ export default function Home() {
         variants={item}
         className="text-lg text-gray-700 max-w-2xl mb-6 leading-relaxed"
       >
-        I'm an AI & strategy consultant, with prior experience in UI/UX design,
-        frontend development, and AI product management.
+        I'm an avid Builder, AI engineering and AI strategy consultant, with prior experience in UI/UX design,
+        frontend development, and AI product management. I help clients build and launch AI products to production from 0→1 with focus on safety.
       </motion.p>
 
       {/* Skill Cards */}
@@ -72,8 +71,8 @@ export default function Home() {
         {[
           {
             icon: Briefcase,
-            title: "AI Consulting",
-            desc: "Beyond delivering strategy and optimizing workflows, I help organizations design, build, and launch ambitious AI solutions — internal and public facing. Translating tech insights to executive audiences",
+            title: "AI Engineering & Strategy Consulting",
+            desc: "Beyond delivering strategy and optimizing workflows, I am hands on code, helping organizations design, build, and launch ambitious AI solutions from 0 to 1 — internal and public facing. Translating tech insights to executive audiences",
             color: "bg-[#DBECF1]",
             iconColor: "text-[#2F768A]",
           },

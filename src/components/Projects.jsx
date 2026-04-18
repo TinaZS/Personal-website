@@ -3,12 +3,31 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "Multi-Agent AI Troubleshooting Platform",
+    description:
+      "Helped client launch a multi-agent AI troubleshooting product with a conversational interface for 10k+ monthly active users. Lead for AI evaluations, implementing safety & security layers, and optimization of agent-to-agent communication and state/memory management.",
+    tag: "AI Engineering & Automated Evaluations",
+    image: import.meta.env.BASE_URL + "p8.png",
+    highlights: [
+      "Directed automated evaluations focused on accuracy, fairness, and reducing hallucinations at scale",
+      "Conducted prompt injection testing and implemented different security layers / guardrails for production stability",
+      "Investigation into agent-to-agent communication and robust state & memory management",
+      "Prod monitoring with automatic analysis of agent performance and iterative improvements",
+    ],
+    techStack: [
+      "Automated Evals",
+      "Prompt Injection Testing",
+      "Agent-to-Agent Communication",
+      "State & Memory Management"
+    ],
+    link: null,
+  },
+  {
     title: "Launching Multi-Agent AI Arbitrator",
     description:
       "Note: this is publicly disclosed. Help client build and launch the first AI Arbitrator",
     tag: "Consulting",
     image: import.meta.env.BASE_URL + "p1.png",
-    // optional extra detail
     highlights: [
       "Define and prioritize product features, manage Jira backlog",
       "Tune LLM prompts and oversee responsible AI testing",
@@ -22,7 +41,7 @@ const projects = [
       "User Journey",
       "Jira",
     ],
-    link: null, // add a URL later if you want
+    link: null,
   },
   {
     title: "IOS APP: On Screen Translation Overlay",
@@ -34,7 +53,6 @@ const projects = [
       "300+ downloads in the first month",
       "Used OCR / Vision framework to capture location of on-screen text",
       "Tuned prompts to make LLM translation much more accurate & in context than google translate",
-
       "Simple 5 step setup for users that takes 30 seconds",
       "Ability to translate anything on screen in real time",
     ],
@@ -42,11 +60,33 @@ const projects = [
     link: null,
   },
   {
+    title: "AI News Intelligence & Mailbox",
+    description:
+      "A personalized daily briefing platform that aggregates and structures fragmented AI news from newsletters, research papers, and social commentary into a unified view.",
+    tag: "Solving Information Overload",
+    image: import.meta.env.BASE_URL + "p7.png",
+    highlights: [
+      "Aggregates content from newsletters, arXiv papers, social media commentaries, and company whitepapers",
+      "Automated story clustering and deduplication to eliminate repetitive news coverage across sources",
+      "Granular personalization tailored to background, role, and specific technical interests",
+      "Optimized 'Mailbox' UX with keyboard shortcuts (Shift+Enter) to efficiently process and mark stories as read",
+    ],
+    techStack: [
+      "React",
+      "LLM",
+      "RAG",
+      "Vector DB",
+      "GitHub Actions",
+      "Python / Flask",
+    ],
+    link: null,
+  },
+  {
     title: "Paper Match: Tinder for Research Papers",
     description:
       "When conducting research, only 3 out of 30 papers downloaded are actually relevant. I built Paper Match, a semantic search and recommender platform that enhances the search and recommender algorithim to get what is really relevant for the researcher based on their feedback.",
     tag: "solving my own problems",
-    image: import.meta.env.BASE_URL + "p4.png",
+    image: import.meta.env.BASE_URL + "p4_old.png",
     highlights: [
       "Scraped and embedded ArXiv abstracts using OpenAI embedding API + Supabase + FAISS for semantic search",
       "Personalized recommendations with an iterative like/dislike feedback loop",
@@ -70,7 +110,7 @@ const projects = [
     title: "Course Finder",
     description:
       "An interactive platform that lets Amherst College students explore courses visually, search by natural language, and discover suprising course connections.",
-    tag: "Currently considered for Adoption at Amherst College",
+    tag: "ADOPTION BY AMHERST COLLEGE April 2026",
     image: import.meta.env.BASE_URL + "p3.png",
     highlights: [
       "Interactive map with 10+ years of Amherst courses. Related classes closer together (using semantic similarity)",
@@ -87,7 +127,6 @@ const projects = [
     ],
     link: null,
   },
-
   {
     title: "Minerva Ed: Multi-Agent Classroom Simulator",
     description:
@@ -136,8 +175,6 @@ export default function Projects() {
       "
     >
       <div className="relative max-w-6xl mx-auto px-6 py-16">
-        {/* same grain as home */}
-        <div className="pointer-events-none absolute inset-0 opacity-[0.06] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 
         <div className="relative">
           <h1
